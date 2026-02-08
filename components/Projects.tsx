@@ -91,16 +91,16 @@ export default function Projects() {
         </div>
 
         {/* Projects Grid */}
-        <div className="grid md:grid-cols-1 gap-12">
+        <div className="grid grid-cols-1 gap-16">
           {projects.map((project) => (
             <div
               key={project.id}
               data-animate
               className="group opacity-0 bg-background rounded-2xl overflow-hidden border border-border hover:border-primary/50 transition duration-500 hover:shadow-lg"
             >
-              <div className="grid md:grid-cols-2 h-full">
+              <div className="grid grid-cols-1 md:grid-cols-2 h-full">
                 {/* Image */}
-                <div className="relative h-96 md:h-full overflow-hidden bg-secondary">
+                <div className="relative h-80 md:h-full overflow-hidden bg-secondary">
                   <img
                     src={project.image || "/placeholder.svg"}
                     alt={project.title}
