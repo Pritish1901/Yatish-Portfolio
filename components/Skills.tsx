@@ -9,25 +9,35 @@ interface Skill {
 
 const skills: Skill[] = [
   {
-    category: 'Design &amp; Prototyping',
+    category: 'Design & Prototyping',
     items: ['Figma', 'Adobe XD', 'Sketch', 'Prototyping', 'Wireframing', 'Design Systems'],
   },
   {
-    category: 'Interaction Design',
-    items: ['Mobile App Design', 'Web Interface Design', 'Micro-interactions', 'Animations', 'User Research'],
+    category: 'Interaction & Motion',
+    items: ['Micro-interactions', 'Animation Principles', 'Transitions', 'Mobile Gestures', 'User Experience Flow'],
   },
   {
-    category: 'Technical',
-    items: ['HTML/CSS', 'React Basics', 'Design Thinking', 'Information Architecture', 'Accessibility'],
+    category: 'User-Centered Methods',
+    items: ['User Research', 'Usability Testing', 'Information Architecture', 'Accessibility (WCAG)', 'Design Thinking'],
   },
   {
-    category: 'Soft Skills',
-    items: ['Team Collaboration', 'Communication', 'Problem Solving', 'Project Management', 'Client Relations'],
+    category: 'Collaboration',
+    items: ['Cross-team Communication', 'Stakeholder Management', 'Design Handoff', 'Documentation', 'Mentoring'],
   },
+]
+
+const tools = [
+  { name: 'Figma', category: 'Primary' },
+  { name: 'Adobe XD', category: 'Primary' },
+  { name: 'Sketch', category: 'Design' },
+  { name: 'Framer', category: 'Prototyping' },
+  { name: 'Principle', category: 'Animation' },
+  { name: 'Protopie', category: 'Prototyping' },
 ]
 
 export default function Skills() {
   const sectionRef = useRef<HTMLDivElement>(null)
+  const toolsRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -37,7 +47,7 @@ export default function Skills() {
           items.forEach((item, index) => {
             setTimeout(() => {
               item.classList.add('animate-fadeIn')
-            }, index * 50)
+            }, index * 80)
           })
         }
       },
@@ -51,33 +61,56 @@ export default function Skills() {
     return () => observer.disconnect()
   }, [])
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && toolsRef.current) {
+          const items = toolsRef.current.querySelectorAll('[data-tool]')
+          items.forEach((item, index) => {
+            setTimeout(() => {
+              item.classList.add('animate-scaleIn')
+            }, index * 60)
+          })
+        }
+      },
+      { threshold: 0.2 }
+    )
+
+    if (toolsRef.current) {
+      observer.observe(toolsRef.current)
+    }
+
+    return () => observer.disconnect()
+  }, [])
+
   return (
     <section
       id="skills"
       ref={sectionRef}
-      className="w-full py-24 px-6 bg-background border-t border-border/50"
+      className="w-full py-32 px-6 bg-background border-t border-border/30"
     >
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
-        <div className="mb-16 space-y-4">
-          <p className="text-lg text-primary font-medium tracking-wide">EXPERTISE</p>
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground">
-            Skills &amp; Tools
+        <div className="mb-20 space-y-6">
+          <p className="text-sm font-semibold tracking-widest text-primary uppercase">Expertise</p>
+          <h2 className="text-5xl md:text-6xl font-bold text-foreground text-balance">
+            Skills & Tools
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl">
-            A comprehensive set of tools and methodologies I use to create exceptional digital experiences.
+          <p className="text-lg text-muted-foreground max-w-3xl leading-relaxed">
+            A comprehensive suite of methodologies, tools, and expertise I leverage to design exceptional 
+            digital products that solve real problems and delight users.
           </p>
         </div>
 
         {/* Skills Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-24">
           {skills.map((skillGroup, idx) => (
             <div
               key={idx}
               data-animate
-              className="opacity-0 p-8 bg-secondary/50 rounded-xl border border-border hover:border-primary/50 hover:bg-secondary transition duration-300"
+              className="opacity-0 group p-8 bg-secondary/40 rounded-xl border border-border/50 hover:border-primary/40 hover:bg-secondary/60 transition-all duration-300"
             >
-              <h3 className="text-lg font-bold text-foreground mb-6">
+              <h3 className="text-base font-semibold text-foreground mb-6 group-hover:text-primary transition duration-300">
                 {skillGroup.category}
               </h3>
 
@@ -85,10 +118,10 @@ export default function Skills() {
                 {skillGroup.items.map((item, itemIdx) => (
                   <li
                     key={itemIdx}
-                    className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition duration-300"
+                    className="flex items-start gap-3 text-muted-foreground group-hover:text-foreground transition duration-300"
                   >
-                    <div className="w-2 h-2 rounded-full bg-primary" />
-                    <span className="text-sm">{item}</span>
+                    <div className="w-1.5 h-1.5 rounded-full bg-primary mt-1.5 flex-shrink-0" />
+                    <span className="text-sm leading-relaxed">{item}</span>
                   </li>
                 ))}
               </ul>
@@ -97,26 +130,39 @@ export default function Skills() {
         </div>
 
         {/* Tools Showcase */}
-        <div className="mt-20 p-12 bg-primary/5 rounded-2xl border border-primary/20">
-          <h3 className="text-2xl font-bold text-foreground mb-8">Design Tools &amp; Software</h3>
+        <div className="p-12 md:p-16 bg-secondary/30 rounded-2xl border border-primary/20">
+          <div className="mb-12">
+            <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-2">Design Tools</h3>
+            <p className="text-muted-foreground">Professional software and platforms I use daily</p>
+          </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-            {[
-              'Figma',
-              'Adobe XD',
-              'Sketch',
-              'Protopie',
-              'Principle',
-              'Framer',
-            ].map((tool, idx) => (
+          <div ref={toolsRef} className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+            {tools.map((tool, idx) => (
               <div
                 key={idx}
-                className="p-4 bg-background rounded-lg border border-border hover:border-primary hover:bg-secondary/50 transition duration-300 flex items-center justify-center text-center"
+                data-tool
+                className="opacity-0 group p-6 bg-background rounded-lg border border-border/60 hover:border-primary/60 hover:bg-primary/5 transition-all duration-300 flex flex-col items-center justify-center text-center cursor-pointer"
               >
-                <p className="font-medium text-foreground text-sm">{tool}</p>
+                <p className="font-semibold text-foreground group-hover:text-primary transition duration-300 text-sm">
+                  {tool.name}
+                </p>
+                <p className="text-xs text-muted-foreground mt-1 group-hover:text-muted-foreground">
+                  {tool.category}
+                </p>
               </div>
             ))}
           </div>
+        </div>
+
+        {/* Bottom CTA */}
+        <div className="mt-20 text-center">
+          <p className="text-muted-foreground mb-6">Want to see these skills in action?</p>
+          <a
+            href="#projects"
+            className="inline-flex px-8 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:opacity-90 transition duration-300"
+          >
+            Explore My Work
+          </a>
         </div>
       </div>
     </section>
