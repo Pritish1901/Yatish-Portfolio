@@ -144,6 +144,27 @@ html {
   }
 }
 
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes colorShift {
+  0% {
+    color: hsl(var(--foreground));
+  }
+  50% {
+    color: hsl(var(--primary));
+  }
+  100% {
+    color: hsl(var(--foreground));
+  }
+}
+
 @layer utilities {
   .animate-fadeIn {
     animation: fadeIn 0.8s ease-out;
@@ -159,6 +180,14 @@ html {
 
   .animate-scaleIn {
     animation: scaleIn 0.6s ease-out;
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .animate-colorShift {
+    animation: colorShift 2s ease-in-out infinite;
   }
 
   .group-hover\:opacity-100 {
