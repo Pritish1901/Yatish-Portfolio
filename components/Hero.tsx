@@ -80,6 +80,11 @@ export default function Hero() {
 
             <a
               href="#contact"
+              onClick={(e) => {
+                e.preventDefault()
+                const element = document.getElementById('contact')
+                element?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+              }}
               className="group inline-flex items-center gap-2 border border-foreground text-foreground px-8 py-3 rounded-lg font-medium hover:bg-foreground/5 transition-all duration-300"
             >
               Get In Touch
