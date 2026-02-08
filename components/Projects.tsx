@@ -166,65 +166,7 @@ export default function Projects() {
           ))}
         </div>
 
-        {/* Behance Embed Section */}
-        <div className="mt-24 space-y-8">
-          <div className="space-y-4">
-            <p className="text-lg text-primary font-medium tracking-wide">BEHANCE PROJECTS</p>
-            <h3 className="text-3xl md:text-4xl font-bold text-foreground">
-              Live Behance Portfolio
-            </h3>
-          </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Investment App */}
-            <a
-              href="https://www.behance.net/gallery/239691179/Investment-app-redesign-(iVector)"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group relative h-96 rounded-xl overflow-hidden border border-border hover:border-primary transition duration-300"
-            >
-              <div className="w-full h-full bg-gradient-to-br from-blue-600 to-blue-900 flex items-end p-6">
-                <div className="relative z-10">
-                  <p className="text-sm text-blue-100 mb-2">Featured Project</p>
-                  <h4 className="text-xl font-bold text-white mb-2">Investment App Redesign</h4>
-                  <p className="text-sm text-blue-100">View on Behance →</p>
-                </div>
-              </div>
-            </a>
-
-            {/* Men's App */}
-            <a
-              href="https://www.behance.net/gallery/234626967/Mens-App"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group relative h-96 rounded-xl overflow-hidden border border-border hover:border-primary transition duration-300"
-            >
-              <div className="w-full h-full bg-gradient-to-br from-slate-700 to-slate-900 flex items-end p-6">
-                <div className="relative z-10">
-                  <p className="text-sm text-slate-300 mb-2">Featured Project</p>
-                  <h4 className="text-xl font-bold text-white mb-2">Men&apos;s App</h4>
-                  <p className="text-sm text-slate-300">View on Behance →</p>
-                </div>
-              </div>
-            </a>
-
-            {/* Formula 1 */}
-            <a
-              href="https://www.behance.net/gallery/236550631/Formula-1-by-Redbull"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group relative h-96 rounded-xl overflow-hidden border border-border hover:border-primary transition duration-300"
-            >
-              <div className="w-full h-full bg-gradient-to-br from-red-700 to-red-900 flex items-end p-6">
-                <div className="relative z-10">
-                  <p className="text-sm text-red-200 mb-2">Featured Project</p>
-                  <h4 className="text-xl font-bold text-white mb-2">Formula 1 by RedBull</h4>
-                  <p className="text-sm text-red-200">View on Behance →</p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
       </div>
     </section>
   )
