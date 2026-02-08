@@ -29,7 +29,7 @@ export default function Header({ isScrolled }: HeaderProps) {
       <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="text-2xl font-bold text-foreground hover:opacity-80 transition">
-          PW
+          YK
         </Link>
 
         {/* Desktop Navigation */}
@@ -51,7 +51,7 @@ export default function Header({ isScrolled }: HeaderProps) {
             onClick={() => {
               // Create a simple resume download
               const resumeContent = `
-Pritish Wani
+Yatish Kapila
 Product & UIUX Designer
 
 SUMMARY
@@ -103,7 +103,7 @@ User Experience, Digital Innovation, Interaction Design
               `
               const element = document.createElement('a')
               element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(resumeContent))
-              element.setAttribute('download', 'Pritish_Wani_Resume.txt')
+              element.setAttribute('download', 'Yatish_Kapila_Resume.txt')
               element.style.display = 'none'
               document.body.appendChild(element)
               element.click()
@@ -141,10 +141,10 @@ User Experience, Digital Innovation, Interaction Design
             ))}
             <button
               onClick={() => {
-                const resumeContent = `Pritish Wani - Product & UIUX Designer Resume`
+                const resumeContent = `Yatish Kapila - Product & UIUX Designer Resume`
                 const element = document.createElement('a')
                 element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(resumeContent))
-                element.setAttribute('download', 'Pritish_Wani_Resume.txt')
+                element.setAttribute('download', 'Yatish_Kapila_Resume.txt')
                 element.style.display = 'none'
                 document.body.appendChild(element)
                 element.click()

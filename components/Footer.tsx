@@ -61,7 +61,7 @@ export default function Footer() {
           <div className="grid md:grid-cols-4 gap-12 mb-12">
             {/* Brand */}
             <div className="space-y-4">
-              <h3 className="text-2xl font-bold text-foreground">PW</h3>
+              <h3 className="text-2xl font-bold text-foreground">YK</h3>
               <p className="text-muted-foreground">
                 Product &amp; UIUX Designer crafting beautiful digital experiences.
               </p>
@@ -158,7 +158,7 @@ export default function Footer() {
               </div>
 
               <p className="text-sm text-muted-foreground text-center md:text-right">
-                © {currentYear} Pritish Wani. Designed &amp; built with attention to detail.
+                © {currentYear} Yatish Kapila. Designed &amp; built with attention to detail.
               </p>
             </div>
           </div>

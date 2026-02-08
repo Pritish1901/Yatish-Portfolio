@@ -39,13 +39,13 @@ export default function Hero() {
             >
               <span className="inline-block group cursor-pointer">
                 <span className="group-hover:text-primary transition-colors duration-300">
-                  Pritish
+                  Yatish
                 </span>
               </span>
               <br />
               <span className="inline-block group cursor-pointer">
                 <span className="group-hover:text-primary transition-colors duration-300">
-                  Wani
+                  Kapila
                 </span>
               </span>
             </h1>
