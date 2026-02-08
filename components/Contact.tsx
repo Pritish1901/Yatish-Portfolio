@@ -40,7 +40,7 @@ export default function Contact() {
         <div className="absolute bottom-0 right-1/3 w-96 h-96 bg-secondary/40 rounded-full blur-3xl -z-10 opacity-30" />
 
         {/* Header */}
-        <div data-animate className="mb-16 space-y-4 opacity-0">
+        <div data-animate className="mb-16 space-y-4 animate-fadeIn">
           <p className="text-sm font-semibold tracking-widest text-primary uppercase">Get In Touch</p>
           <h2 className="text-5xl md:text-6xl font-bold text-foreground text-balance">
             Let&apos;s Create Something <br />
@@ -55,7 +55,7 @@ export default function Contact() {
         {/* Main Content Grid */}
         <div className="grid md:grid-cols-2 gap-16 lg:gap-24 items-start">
           {/* Left Column - Email CTA */}
-          <div data-animate className="opacity-0 space-y-12">
+          <div data-animate className="animate-fadeIn space-y-12">
             {/* Availability Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-secondary/50 rounded-full border border-border/50">
               <div className="w-2 h-2 rounded-full bg-primary animate-pulse" />
@@ -131,7 +131,7 @@ export default function Contact() {
           </div>
 
           {/* Right Column - Quick Info */}
-          <div data-animate className="opacity-0 space-y-8">
+          <div data-animate className="animate-fadeIn space-y-8">
             {/* Info Cards */}
             <div className="grid gap-6">
               {/* Response Time */}
