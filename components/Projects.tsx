@@ -96,7 +96,7 @@ export default function Projects() {
             <div
               key={project.id}
               data-animate
-              className="group opacity-0 bg-background rounded-2xl overflow-hidden border border-border hover:border-primary/50 transition duration-500 hover:shadow-lg"
+              className="group bg-background rounded-2xl overflow-hidden border border-border hover:border-primary/50 transition duration-500 hover:shadow-lg animate-fadeIn"
             >
               <div className="grid grid-cols-1 md:grid-cols-2 h-full">
                 {/* Image */}

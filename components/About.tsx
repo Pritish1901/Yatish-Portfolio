@@ -61,7 +61,7 @@ export default function About() {
 
         <div className="grid md:grid-cols-2 gap-16 items-center lg:gap-24">
           {/* Left - Content */}
-          <div ref={textRef} className="space-y-8 opacity-0">
+          <div ref={textRef} className="space-y-8 animate-fadeIn">
             <div className="space-y-6">
               <p className="text-lg text-muted-foreground leading-relaxed">
                 I&apos;m a product and UIUX designer passionate about creating intuitive, 
@@ -103,19 +103,19 @@ export default function About() {
           {/* Right - Stats & Highlights */}
           <div ref={statsRef} className="space-y-12">
             <div className="grid grid-cols-2 gap-6">
-              <div data-stat className="opacity-0 p-8 bg-secondary/40 rounded-xl border border-border/50 hover:border-primary/30 transition duration-300">
+              <div data-stat className="p-8 bg-secondary/40 rounded-xl border border-border/50 hover:border-primary/30 transition duration-300 animate-scaleIn">
                 <p className="text-4xl md:text-5xl font-bold text-primary mb-2">50+</p>
                 <p className="text-sm text-muted-foreground">Projects Delivered</p>
               </div>
-              <div data-stat className="opacity-0 p-8 bg-secondary/40 rounded-xl border border-border/50 hover:border-primary/30 transition duration-300">
+              <div data-stat className="p-8 bg-secondary/40 rounded-xl border border-border/50 hover:border-primary/30 transition duration-300 animate-scaleIn">
                 <p className="text-4xl md:text-5xl font-bold text-primary mb-2">5+</p>
                 <p className="text-sm text-muted-foreground">Years in Design</p>
               </div>
-              <div data-stat className="opacity-0 p-8 bg-secondary/40 rounded-xl border border-border/50 hover:border-primary/30 transition duration-300">
+              <div data-stat className="p-8 bg-secondary/40 rounded-xl border border-border/50 hover:border-primary/30 transition duration-300 animate-scaleIn">
                 <p className="text-4xl md:text-5xl font-bold text-primary mb-2">20+</p>
                 <p className="text-sm text-muted-foreground">Satisfied Clients</p>
               </div>
-              <div data-stat className="opacity-0 p-8 bg-secondary/40 rounded-xl border border-border/50 hover:border-primary/30 transition duration-300">
+              <div data-stat className="p-8 bg-secondary/40 rounded-xl border border-border/50 hover:border-primary/30 transition duration-300 animate-scaleIn">
                 <p className="text-4xl md:text-5xl font-bold text-primary mb-2">100%</p>
                 <p className="text-sm text-muted-foreground">Client Retention</p>
               </div>

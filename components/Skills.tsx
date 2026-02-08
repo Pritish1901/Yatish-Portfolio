@@ -108,7 +108,7 @@ export default function Skills() {
             <div
               key={idx}
               data-animate
-              className="opacity-0 p-8 bg-secondary/50 rounded-lg border border-border/40"
+              className="p-8 bg-secondary/50 rounded-lg border border-border/40 animate-fadeIn"
             >
               <h3 className="text-base font-semibold text-foreground mb-6">
                 {skillGroup.category}
