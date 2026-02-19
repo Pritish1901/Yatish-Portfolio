@@ -30,7 +30,7 @@ const projects: Project[] = [
     category: 'Mobile App Design',
     description:
       'Designed a comprehensive mobile application with focus on intuitive navigation and modern aesthetics. Created detailed user flows and micro-interactions for enhanced engagement.',
-    image: '/mens-app-design.jpg',
+    image: '/mens-app-mobile.jpg',
     behanceUrl: 'https://www.behance.net/gallery/234626967/Mens-App',
     tools: ['Figma', 'Mobile Design', 'Interaction Design', 'Prototyping'],
   },
