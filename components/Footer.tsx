@@ -8,7 +8,7 @@ export default function Footer() {
   const socialLinks = [
     {
       name: 'Email',
-      href: 'mailto:pritish@example.com',
+      href: 'mailto:kapilayatish@gmail.com',
       icon: Mail,
     },
     {
@@ -46,7 +46,7 @@ export default function Footer() {
           </p>
 
           <a
-            href="mailto:pritish@example.com"
+            href="mailto:kapilayatish@gmail.com"
             className="inline-flex items-center gap-2 bg-primary-foreground text-primary px-8 py-4 rounded-lg font-bold hover:opacity-90 transition duration-300"
           >
             <Mail size={20} />

@@ -69,17 +69,17 @@ export default function Contact() {
                   Preferred Contact
                 </p>
                 <a
-                  href="mailto:hello@yatishkapila.com"
+                  href="mailto:kapilayatish@gmail.com"
                   className="group inline-flex flex-col"
                 >
                   <span className="text-3xl md:text-4xl font-bold text-foreground group-hover:text-primary transition-colors duration-300">
-                    hello@yatishkapila.com
+                    kapilayatish@gmail.com
                   </span>
                 </a>
               </div>
 
               <a
-                href="mailto:hello@yatishkapila.com"
+                href="mailto:kapilayatish@gmail.com"
                 className="group inline-flex items-center gap-3 bg-primary text-primary-foreground px-8 py-4 rounded-lg font-medium hover:opacity-90 transition-all duration-300"
               >
                 <Mail size={20} />
