@@ -194,16 +194,12 @@ html {
     @apply opacity-100;
   }
 
-  /* Gradient utilities */
+  /* Gradient utilities with custom colors */
   .gradient-green-emerald {
-    @apply bg-gradient-to-br from-tertiary/30 to-emerald-300/20;
-  }
-
-  .gradient-green-emerald-dark {
-    @apply dark:from-tertiary/40 dark:to-emerald-400/30;
+    background: linear-gradient(to bottom right, rgba(52, 211, 153, 0.3), rgba(52, 211, 153, 0.2));
   }
 
   .gradient-green-overlay {
-    @apply bg-gradient-to-t from-tertiary/20 to-transparent;
+    background: linear-gradient(to top, rgba(52, 211, 153, 0.2), transparent);
   }
 }
