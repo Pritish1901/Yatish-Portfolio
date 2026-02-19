@@ -98,10 +98,10 @@ export default function Hero() {
               const element = document.getElementById('projects')
               element?.scrollIntoView({ behavior: 'smooth' })
             }}>
-              <p className="text-xs text-muted-foreground uppercase tracking-widest font-light">Scroll</p>
-              <div className="w-6 h-10 border border-foreground/50 rounded-full flex justify-center p-2 relative">
+              <p className="text-xs text-tertiary uppercase tracking-widest font-light">Scroll to Explore</p>
+              <div className="w-8 h-12 rounded-full flex justify-center p-2.5 relative backdrop-blur-xl bg-gradient-to-br from-tertiary/25 to-tertiary/10 border-2 border-tertiary/50 shadow-lg shadow-tertiary/30 animate-liquidGlass hover:shadow-2xl hover:shadow-tertiary/40 transition-all duration-300">
                 <div
-                  className="w-1 h-2 bg-foreground rounded-full absolute top-2 animate-bounce"
+                  className="w-1.5 h-2.5 bg-gradient-to-b from-tertiary to-tertiary/60 rounded-full absolute top-3 animate-bounce"
                   style={{ animation: 'bounce 2s infinite' }}
                 />
               </div>
