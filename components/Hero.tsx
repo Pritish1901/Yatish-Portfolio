@@ -65,7 +65,7 @@ export default function Hero() {
                   <img
                     src="/profile-photo.jpg"
                     alt="Yatish Kapila - Creative Designer"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover object-center"
                   />
                 </div>
               </div>
