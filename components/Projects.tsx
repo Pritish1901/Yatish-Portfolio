@@ -100,7 +100,7 @@ export default function Projects() {
             >
               <div 
                 className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 pointer-events-none rounded-2xl"
-                style={{ background: 'linear-gradient(to bottom right, rgba(52, 211, 153, 0.1), rgba(52, 211, 153, 0.05))' }}
+                style={{ background: 'linear-gradient(to bottom right, rgba(52, 211, 153, 0.25), rgba(52, 211, 153, 0.12))' }}
               />
               <div className="grid grid-cols-1 md:grid-cols-2 h-full relative z-10">
                 {/* Image */}

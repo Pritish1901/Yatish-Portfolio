@@ -18,7 +18,7 @@ export default function Hero() {
 
   return (
     <section className="min-h-screen w-full pt-24 pb-20 px-6 flex items-center justify-center bg-background overflow-hidden relative">
-      <div className="absolute inset-0 gradient-green-emerald -z-10" />
+      <div className="absolute inset-0 -z-10" style={{ background: 'linear-gradient(135deg, rgba(52, 211, 153, 0.15) 0%, rgba(52, 211, 153, 0.08) 50%, transparent 100%)' }} />
       <div ref={heroRef} className="max-w-6xl mx-auto w-full relative z-10">
         {/* Gradient Background Elements - Minimal */}
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl -z-10 opacity-40" />
@@ -102,7 +102,7 @@ export default function Hero() {
               <p className="text-xs text-tertiary uppercase tracking-widest font-light">Scroll to Explore</p>
               <div 
                 className="w-8 h-12 rounded-full flex justify-center p-2.5 relative backdrop-blur-xl border-2 border-tertiary/50 shadow-lg shadow-tertiary/30 animate-liquidGlass hover:shadow-2xl hover:shadow-tertiary/40 transition-all duration-300"
-                style={{ background: 'linear-gradient(to bottom right, rgba(52, 211, 153, 0.25), rgba(52, 211, 153, 0.1))' }}
+                style={{ background: 'linear-gradient(to bottom right, rgba(52, 211, 153, 0.4), rgba(52, 211, 153, 0.2))' }}
               >
                 <div
                   className="w-1.5 h-2.5 bg-gradient-to-b from-tertiary to-tertiary/60 rounded-full absolute top-3 animate-bounce"
