@@ -40,7 +40,7 @@ const projects: Project[] = [
     category: 'Web Design',
     description:
       'Created an engaging sports content interface with dynamic animations and real-time data visualization. Focused on user engagement and visual storytelling for F1 enthusiasts.',
-    image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop',
+    image: '/formula1-redbull.jpg',
     behanceUrl: 'https://www.behance.net/gallery/236550631/Formula-1-by-Redbull',
     tools: ['Figma', 'Web Design', 'Animation', 'Data Visualization'],
   },
