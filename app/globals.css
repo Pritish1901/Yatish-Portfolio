@@ -225,13 +225,4 @@ html {
   .group-hover\:opacity-100 {
     @apply opacity-100;
   }
-
-  /* Gradient utilities with custom colors */
-  .gradient-green-emerald {
-    background: linear-gradient(to bottom right, rgba(52, 211, 153, 0.3), rgba(52, 211, 153, 0.2));
-  }
-
-  .gradient-green-overlay {
-    background: linear-gradient(to top, rgba(52, 211, 153, 0.2), transparent);
-  }
 }
