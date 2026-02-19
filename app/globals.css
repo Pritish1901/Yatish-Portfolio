@@ -16,73 +16,73 @@ body {
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 0 0% 13%;
-    --card: 0 0% 99%;
-    --card-foreground: 0 0% 13%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 13%;
-    --primary: 6 100% 50%;
+    --background: 0 0% 6%;
+    --foreground: 0 0% 100%;
+    --card: 0 0% 12%;
+    --card-foreground: 0 0% 100%;
+    --popover: 0 0% 12%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 327 100% 50%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 186 100% 44%;
+    --secondary: 35 100% 60%;
     --secondary-foreground: 0 0% 13%;
-    --muted: 215 14% 88%;
-    --muted-foreground: 215 12% 45%;
-    --accent: 25 90% 50%;
+    --muted: 0 0% 40%;
+    --muted-foreground: 0 0% 75%;
+    --accent: 327 100% 50%;
     --accent-foreground: 0 0% 100%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --border: 215 14% 82%;
-    --input: 215 14% 88%;
-    --ring: 6 100% 50%;
-    --chart-1: 6 100% 50%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 327 100% 50%;
+    --chart-1: 327 100% 50%;
     --chart-2: 186 100% 44%;
     --chart-3: 25 90% 50%;
     --chart-4: 120 73% 48%;
     --chart-5: 348 100% 46%;
     --radius: 0.5rem;
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 0 0% 13%;
-    --sidebar-primary: 6 100% 50%;
+    --sidebar-background: 0 0% 8%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 327 100% 50%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 186 100% 44%;
+    --sidebar-accent: 35 100% 60%;
     --sidebar-accent-foreground: 0 0% 13%;
-    --sidebar-border: 215 14% 82%;
-    --sidebar-ring: 6 100% 50%;
+    --sidebar-border: 0 0% 20%;
+    --sidebar-ring: 327 100% 50%;
   }
   .dark {
-    --background: 15 23% 13%;
-    --foreground: 0 0% 98%;
-    --card: 15 23% 18%;
-    --card-foreground: 0 0% 98%;
-    --popover: 15 23% 18%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 6 100% 50%;
-    --primary-foreground: 0 0% 13%;
-    --secondary: 186 100% 44%;
-    --secondary-foreground: 15 23% 13%;
-    --muted: 215 12% 40%;
-    --muted-foreground: 0 0% 75%;
-    --accent: 25 90% 52%;
-    --accent-foreground: 0 0% 13%;
+    --background: 0 0% 6%;
+    --foreground: 0 0% 100%;
+    --card: 0 0% 12%;
+    --card-foreground: 0 0% 100%;
+    --popover: 0 0% 12%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 327 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 35 100% 60%;
+    --secondary-foreground: 0 0% 13%;
+    --muted: 0 0% 35%;
+    --muted-foreground: 0 0% 70%;
+    --accent: 327 100% 50%;
+    --accent-foreground: 0 0% 100%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
-    --border: 215 14% 25%;
-    --input: 215 14% 25%;
-    --ring: 6 100% 50%;
-    --chart-1: 6 100% 50%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 327 100% 50%;
+    --chart-1: 327 100% 50%;
     --chart-2: 186 100% 44%;
     --chart-3: 25 90% 52%;
     --chart-4: 120 73% 55%;
     --chart-5: 348 100% 50%;
-    --sidebar-background: 15 23% 13%;
-    --sidebar-foreground: 0 0% 95%;
-    --sidebar-primary: 6 100% 50%;
-    --sidebar-primary-foreground: 0 0% 13%;
-    --sidebar-accent: 186 100% 44%;
-    --sidebar-accent-foreground: 15 23% 13%;
-    --sidebar-border: 215 14% 25%;
-    --sidebar-ring: 6 100% 50%;
+    --sidebar-background: 0 0% 8%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 327 100% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 35 100% 60%;
+    --sidebar-accent-foreground: 0 0% 13%;
+    --sidebar-border: 0 0% 20%;
+    --sidebar-ring: 327 100% 50%;
   }
 }
 
@@ -180,6 +180,15 @@ html {
   }
 }
 
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 @layer utilities {
   .animate-fadeIn {
     animation: fadeIn 0.8s ease-out;
@@ -207,6 +216,10 @@ html {
 
   .animate-liquidGlass {
     animation: liquidGlass 3s ease-in-out infinite;
+  }
+
+  .animate-marquee {
+    animation: marquee 30s linear infinite;
   }
 
   .group-hover\:opacity-100 {
