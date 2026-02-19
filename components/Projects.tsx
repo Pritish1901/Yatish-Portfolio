@@ -20,7 +20,7 @@ const projects: Project[] = [
     category: 'Mobile App Design',
     description:
       'Complete UI/UX overhaul for an investment application by iVector. Enhanced user onboarding, improved dashboard interactions, and created a comprehensive design system.',
-    image: 'https://images.unsplash.com/photo-1611232585255-3d1e6b06de5f?w=600&h=400&fit=crop',
+    image: '/investment-app-redesign.jpg',
     behanceUrl: 'https://www.behance.net/gallery/239691179/Investment-app-redesign-(iVector)',
     tools: ['Figma', 'Prototyping', 'User Research', 'Design System'],
   },
