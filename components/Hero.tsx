@@ -105,8 +105,8 @@ export default function Hero() {
                 style={{ background: 'linear-gradient(to bottom right, rgba(52, 211, 153, 0.4), rgba(52, 211, 153, 0.2))' }}
               >
                 <div
-                  className="w-1.5 h-2.5 bg-gradient-to-b from-tertiary to-tertiary/60 rounded-full absolute top-3 animate-bounce"
-                  style={{ animation: 'bounce 2s infinite' }}
+                  className="w-1.5 h-2.5 rounded-full absolute top-3 animate-bounce"
+                  style={{ background: 'linear-gradient(to bottom, rgba(52, 211, 153, 1), rgba(52, 211, 153, 0.6))', animation: 'bounce 2s infinite' }}
                 />
               </div>
             </div>
