@@ -31,7 +31,7 @@ export default function Hero() {
                   <span className="text-primary">Yatish.</span>
                 </h1>
                 <h2 className="text-4xl md:text-5xl font-bold text-foreground mt-2">
-                  Creative Designer<br />in Turkey.
+                  Creative Designer<br />in India.
                 </h2>
               </div>
 
