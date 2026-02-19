@@ -17,8 +17,9 @@ export default function Hero() {
   }, [])
 
   return (
-    <section className="min-h-screen w-full pt-24 pb-20 px-6 flex items-center justify-center bg-background overflow-hidden">
-      <div ref={heroRef} className="max-w-6xl mx-auto w-full">
+    <section className="min-h-screen w-full pt-24 pb-20 px-6 flex items-center justify-center bg-background overflow-hidden relative">
+      <div className="absolute inset-0 gradient-green-emerald -z-10" />
+      <div ref={heroRef} className="max-w-6xl mx-auto w-full relative z-10">
         {/* Gradient Background Elements - Minimal */}
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl -z-10 opacity-40" />
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary/40 rounded-full blur-3xl -z-10 opacity-30" />

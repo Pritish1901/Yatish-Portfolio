@@ -96,9 +96,10 @@ export default function Projects() {
             <div
               key={project.id}
               data-animate
-              className="group bg-background rounded-2xl overflow-hidden border border-tertiary/30 hover:border-tertiary/60 hover:shadow-lg hover:shadow-tertiary/20 transition duration-500 animate-fadeIn"
+              className="group bg-background rounded-2xl overflow-hidden border border-tertiary/30 hover:border-tertiary/60 hover:shadow-lg hover:shadow-tertiary/20 transition duration-500 animate-fadeIn relative"
             >
-              <div className="grid grid-cols-1 md:grid-cols-2 h-full">
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 bg-gradient-to-br from-tertiary/10 to-emerald-300/5 transition duration-500 pointer-events-none rounded-2xl" />
+              <div className="grid grid-cols-1 md:grid-cols-2 h-full relative z-10">
                 {/* Image */}
                 <div className="relative h-80 md:h-full overflow-hidden bg-secondary">
                   <img

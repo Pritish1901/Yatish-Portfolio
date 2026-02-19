@@ -193,4 +193,17 @@ html {
   .group-hover\:opacity-100 {
     @apply opacity-100;
   }
+
+  /* Gradient utilities */
+  .gradient-green-emerald {
+    @apply bg-gradient-to-br from-tertiary/30 to-emerald-300/20;
+  }
+
+  .gradient-green-emerald-dark {
+    @apply dark:from-tertiary/40 dark:to-emerald-400/30;
+  }
+
+  .gradient-green-overlay {
+    @apply bg-gradient-to-t from-tertiary/20 to-transparent;
+  }
 }
