@@ -100,7 +100,10 @@ export default function Hero() {
               element?.scrollIntoView({ behavior: 'smooth' })
             }}>
               <p className="text-xs text-tertiary uppercase tracking-widest font-light">Scroll to Explore</p>
-              <div className="w-8 h-12 rounded-full flex justify-center p-2.5 relative backdrop-blur-xl bg-gradient-to-br from-tertiary/25 to-tertiary/10 border-2 border-tertiary/50 shadow-lg shadow-tertiary/30 animate-liquidGlass hover:shadow-2xl hover:shadow-tertiary/40 transition-all duration-300">
+              <div 
+                className="w-8 h-12 rounded-full flex justify-center p-2.5 relative backdrop-blur-xl border-2 border-tertiary/50 shadow-lg shadow-tertiary/30 animate-liquidGlass hover:shadow-2xl hover:shadow-tertiary/40 transition-all duration-300"
+                style={{ background: 'linear-gradient(to bottom right, rgba(52, 211, 153, 0.25), rgba(52, 211, 153, 0.1))' }}
+              >
                 <div
                   className="w-1.5 h-2.5 bg-gradient-to-b from-tertiary to-tertiary/60 rounded-full absolute top-3 animate-bounce"
                   style={{ animation: 'bounce 2s infinite' }}
