@@ -65,7 +65,8 @@ export default function Hero() {
                   <img
                     src="/profile-photo.jpg"
                     alt="Yatish Kapila - Creative Designer"
-                    className="w-full h-full object-cover object-center"
+                    className="w-full h-full object-cover"
+                    style={{ objectPosition: 'center 20%' }}
                   />
                 </div>
               </div>
