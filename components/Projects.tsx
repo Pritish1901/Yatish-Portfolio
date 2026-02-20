@@ -1,75 +1,79 @@
-'use client'
+"use client";
 
-import { useEffect, useRef } from 'react'
-import { ExternalLink, Github } from 'lucide-react'
+import { useEffect, useRef } from "react";
+import { ExternalLink, Github } from "lucide-react";
 
 interface Project {
-  id: number
-  title: string
-  category: string
-  description: string
-  image: string
-  behanceUrl: string
-  tools: string[]
+  id: number;
+  title: string;
+  category: string;
+  description: string;
+  image: string;
+  behanceUrl: string;
+  tools: string[];
 }
 
 const projects: Project[] = [
   {
     id: 1,
-    title: 'Investment App Redesign',
-    category: 'Mobile App Design',
+    title: "Investment App Redesign",
+    category: "Mobile App Design",
     description:
-      'Complete UI/UX overhaul for an investment application by iVector. Enhanced user onboarding, improved dashboard interactions, and created a comprehensive design system.',
-    image: 'https://images.unsplash.com/photo-1611232585255-3d1e6b06de5f?w=600&h=400&fit=crop',
-    behanceUrl: 'https://www.behance.net/gallery/239691179/Investment-app-redesign-(iVector)',
-    tools: ['Figma', 'Prototyping', 'User Research', 'Design System'],
+      "Complete UI/UX overhaul for an investment application by iVector. Enhanced user onboarding, improved dashboard interactions, and created a comprehensive design system.",
+    image: "investment app redesign.png",
+    behanceUrl:
+      "https://www.behance.net/gallery/239691179/Investment-app-redesign-(iVector)",
+    tools: ["Figma", "Prototyping", "User Research", "Design System"],
   },
   {
     id: 2,
     title: "Men's App",
-    category: 'Mobile App Design',
+    category: "Mobile App Design",
     description:
-      'Designed a comprehensive mobile application with focus on intuitive navigation and modern aesthetics. Created detailed user flows and micro-interactions for enhanced engagement.',
-    image: 'https://images.unsplash.com/photo-1512941691920-25bda97eb1e8?w=600&h=400&fit=crop',
-    behanceUrl: 'https://www.behance.net/gallery/234626967/Mens-App',
-    tools: ['Figma', 'Mobile Design', 'Interaction Design', 'Prototyping'],
+      "Designed a comprehensive mobile application with focus on intuitive navigation and modern aesthetics. Created detailed user flows and micro-interactions for enhanced engagement.",
+    image:
+      "https://images.unsplash.com/photo-1512941691920-25bda97eb1e8?w=600&h=400&fit=crop",
+    behanceUrl: "https://www.behance.net/gallery/234626967/Mens-App",
+    tools: ["Figma", "Mobile Design", "Interaction Design", "Prototyping"],
   },
   {
     id: 3,
-    title: 'Formula 1 by RedBull',
-    category: 'Web Design',
+    title: "Formula 1 by RedBull",
+    category: "Web Design",
     description:
-      'Created an engaging sports content interface with dynamic animations and real-time data visualization. Focused on user engagement and visual storytelling for F1 enthusiasts.',
-    image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop',
-    behanceUrl: 'https://www.behance.net/gallery/236550631/Formula-1-by-Redbull',
-    tools: ['Figma', 'Web Design', 'Animation', 'Data Visualization'],
+      "Created an engaging sports content interface with dynamic animations and real-time data visualization. Focused on user engagement and visual storytelling for F1 enthusiasts.",
+    image:
+      "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop",
+    behanceUrl:
+      "https://www.behance.net/gallery/236550631/Formula-1-by-Redbull",
+    tools: ["Figma", "Web Design", "Animation", "Data Visualization"],
   },
-]
+];
 
 export default function Projects() {
-  const sectionRef = useRef<HTMLDivElement>(null)
+  const sectionRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting && sectionRef.current) {
-          const items = sectionRef.current.querySelectorAll('[data-animate]')
+          const items = sectionRef.current.querySelectorAll("[data-animate]");
           items.forEach((item, index) => {
             setTimeout(() => {
-              item.classList.add('animate-fadeIn')
-            }, index * 100)
-          })
+              item.classList.add("animate-fadeIn");
+            }, index * 100);
+          });
         }
       },
-      { threshold: 0.1 }
-    )
+      { threshold: 0.1 },
+    );
 
     if (sectionRef.current) {
-      observer.observe(sectionRef.current)
+      observer.observe(sectionRef.current);
     }
 
-    return () => observer.disconnect()
-  }, [])
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <section
@@ -80,13 +84,15 @@ export default function Projects() {
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="mb-16 space-y-4">
-          <p className="text-lg text-primary font-medium tracking-wide">FEATURED WORK</p>
+          <p className="text-lg text-primary font-medium tracking-wide">
+            FEATURED WORK
+          </p>
           <h2 className="text-4xl md:text-5xl font-bold text-foreground">
             Recent Projects
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl">
-            A selection of my best work showcasing expertise in interaction design,
-            mobile applications, and web platforms.
+            A selection of my best work showcasing expertise in interaction
+            design, mobile applications, and web platforms.
           </p>
         </div>
 
@@ -126,7 +132,9 @@ export default function Projects() {
 
                     {/* Tools */}
                     <div className="space-y-3">
-                      <p className="text-sm font-medium text-foreground">Tools &amp; Skills:</p>
+                      <p className="text-sm font-medium text-foreground">
+                        Tools &amp; Skills:
+                      </p>
                       <div className="flex flex-wrap gap-2">
                         {project.tools.map((tool, idx) => (
                           <span
@@ -157,7 +165,10 @@ export default function Projects() {
                       rel="noopener noreferrer"
                       className="w-12 h-12 rounded-lg border-2 border-border flex items-center justify-center hover:border-primary hover:text-primary transition duration-300 group/link"
                     >
-                      <ExternalLink size={20} className="group-hover/link:scale-110 transition" />
+                      <ExternalLink
+                        size={20}
+                        className="group-hover/link:scale-110 transition"
+                      />
                     </a>
                   </div>
                 </div>
@@ -165,9 +176,7 @@ export default function Projects() {
             </div>
           ))}
         </div>
-
-
       </div>
     </section>
-  )
+  );
 }
