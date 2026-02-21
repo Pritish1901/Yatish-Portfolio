@@ -80,7 +80,7 @@ export default function Contact() {
 
               <a
                 href="mailto:kapilayatish@gmail.com"
-                className="group inline-flex items-center gap-3 bg-primary text-primary-foreground px-8 py-4 rounded-lg font-medium hover:opacity-90 transition-all duration-300 shadow-lg hover:shadow-xl"
+                className="group inline-flex items-center gap-3 bg-primary text-primary-foreground px-8 py-4 rounded-lg font-medium hover:opacity-90 transition-all duration-300 shadow-lg hover:shadow-xl glow-effect"
               >
                 <Mail size={20} />
                 <span>Send Email</span>

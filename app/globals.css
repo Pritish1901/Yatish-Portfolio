@@ -189,6 +189,26 @@ html {
   }
 }
 
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(255, 0, 110, 0.3), 0 0 10px rgba(255, 0, 110, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 0, 110, 0.6), 0 0 30px rgba(255, 0, 110, 0.3);
+  }
+}
+
+@keyframes glowBorder {
+  0%, 100% {
+    border-color: rgba(255, 0, 110, 0.3);
+    box-shadow: 0 0 5px rgba(255, 0, 110, 0.3);
+  }
+  50% {
+    border-color: rgba(255, 0, 110, 0.8);
+    box-shadow: 0 0 15px rgba(255, 0, 110, 0.6), 0 0 25px rgba(255, 0, 110, 0.3);
+  }
+}
+
 @layer utilities {
   .animate-fadeIn {
     animation: fadeIn 0.8s ease-out;
@@ -220,6 +240,18 @@ html {
 
   .animate-marquee {
     animation: marquee 30s linear infinite;
+  }
+
+  .glow-effect {
+    animation: glow 3s ease-in-out infinite;
+  }
+
+  .glow-border {
+    animation: glowBorder 2s ease-in-out infinite;
+  }
+
+  .hover-glow:hover {
+    animation: glow 1s ease-in-out forwards;
   }
 
   .group-hover\:opacity-100 {

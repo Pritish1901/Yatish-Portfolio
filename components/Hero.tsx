@@ -44,13 +44,13 @@ export default function Hero() {
               <div className="flex flex-wrap gap-4 pt-4">
                 <a
                   href="#contact"
-                  className="inline-flex items-center justify-center px-8 py-3 bg-primary text-primary-foreground font-semibold rounded-full hover:opacity-90 transition duration-300 cursor-pointer shadow-lg hover:shadow-xl"
+                  className="inline-flex items-center justify-center px-8 py-3 bg-primary text-primary-foreground font-semibold rounded-full hover:opacity-90 transition duration-300 cursor-pointer shadow-lg hover:shadow-xl glow-effect"
                 >
                   Get in Touch
                 </a>
                 <a
                   href="#projects"
-                  className="inline-flex items-center justify-center px-8 py-3 border-2 border-foreground text-foreground font-semibold rounded-full hover:bg-foreground/5 transition duration-300 cursor-pointer"
+                  className="inline-flex items-center justify-center px-8 py-3 border-2 border-foreground text-foreground font-semibold rounded-full hover:bg-foreground/5 transition duration-300 cursor-pointer glow-border"
                 >
                   View All Works
                 </a>
