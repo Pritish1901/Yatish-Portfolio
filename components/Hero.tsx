@@ -79,20 +79,28 @@ export default function Hero() {
       <section className="w-full bg-foreground py-8 overflow-hidden">
         <div className="flex items-center gap-8">
           <div className="flex items-center gap-8 animate-marquee whitespace-nowrap">
-            {[...Array(8)].map((_, i) => (
-              <div key={i} className="flex items-center gap-8">
-                <span className="text-4xl font-bold text-background">Graphic Designer</span>
-                <span className="w-3 h-3 bg-primary rounded-full flex-shrink-0" />
-              </div>
-            ))}
+            {[...Array(8)].map((_, i) => {
+              const professions = ['Product Designer', 'Prompt Engineer', 'UI/UX', 'Business Analyst']
+              const profession = professions[i % professions.length]
+              return (
+                <div key={i} className="flex items-center gap-8">
+                  <span className="text-4xl font-bold text-background">{profession}</span>
+                  <span className="w-3 h-3 bg-primary rounded-full flex-shrink-0" />
+                </div>
+              )
+            })}
           </div>
           <div className="flex items-center gap-8 animate-marquee whitespace-nowrap" aria-hidden="true">
-            {[...Array(8)].map((_, i) => (
-              <div key={i} className="flex items-center gap-8">
-                <span className="text-4xl font-bold text-background">Graphic Designer</span>
-                <span className="w-3 h-3 bg-primary rounded-full flex-shrink-0" />
-              </div>
-            ))}
+            {[...Array(8)].map((_, i) => {
+              const professions = ['Product Designer', 'Prompt Engineer', 'UI/UX', 'Business Analyst']
+              const profession = professions[i % professions.length]
+              return (
+                <div key={i} className="flex items-center gap-8">
+                  <span className="text-4xl font-bold text-background">{profession}</span>
+                  <span className="w-3 h-3 bg-primary rounded-full flex-shrink-0" />
+                </div>
+              )
+            })}
           </div>
         </div>
       </section>
