@@ -2,7 +2,6 @@
 
 import { Mail, Linkedin, Twitter, ExternalLink } from 'lucide-react'
 import { useEffect, useRef } from 'react'
-import { GlowingEffect } from '@/components/ui/glowing-effect'
 
 export default function Contact() {
   const sectionRef = useRef<HTMLDivElement>(null)
@@ -81,22 +80,10 @@ export default function Contact() {
 
               <a
                 href="mailto:kapilayatish@gmail.com"
-                className="group inline-flex items-center gap-3 bg-primary text-primary-foreground px-8 py-4 rounded-lg font-medium hover:opacity-90 transition-all duration-300 relative"
+                className="group inline-flex items-center gap-3 bg-primary text-primary-foreground px-8 py-4 rounded-lg font-medium hover:opacity-90 transition-all duration-300 shadow-lg hover:shadow-xl"
               >
-                <div className="absolute inset-0 rounded-lg">
-                  <GlowingEffect
-                    spread={40}
-                    glow={true}
-                    disabled={false}
-                    proximity={64}
-                    inactiveZone={0.01}
-                    borderWidth={2}
-                  />
-                </div>
-                <span className="relative z-10 flex items-center gap-3">
-                  <Mail size={20} />
-                  <span>Send Email</span>
-                </span>
+                <Mail size={20} />
+                <span>Send Email</span>
               </a>
             </div>
 
