@@ -31,8 +31,7 @@ const projects: Project[] = [
     category: "Mobile App Design",
     description:
       "Designed a comprehensive mobile application with focus on intuitive navigation and modern aesthetics. Created detailed user flows and micro-interactions for enhanced engagement.",
-    image:
-      "https://images.unsplash.com/photo-1512941691920-25bda97eb1e8?w=600&h=400&fit=crop",
+    image: "men's app.png",
     behanceUrl: "https://www.behance.net/gallery/234626967/Mens-App",
     tools: ["Figma", "Mobile Design", "Interaction Design", "Prototyping"],
   },
@@ -42,8 +41,7 @@ const projects: Project[] = [
     category: "Web Design",
     description:
       "Created an engaging sports content interface with dynamic animations and real-time data visualization. Focused on user engagement and visual storytelling for F1 enthusiasts.",
-    image:
-      "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop",
+    image: "formula 1.png",
     behanceUrl:
       "https://www.behance.net/gallery/236550631/Formula-1-by-Redbull",
     tools: ["Figma", "Web Design", "Animation", "Data Visualization"],
