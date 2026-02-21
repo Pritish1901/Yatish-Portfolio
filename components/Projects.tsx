@@ -156,7 +156,7 @@ export default function Projects() {
                       href={project.behanceUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:opacity-90 transition duration-300"
+                      className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:opacity-90 transition duration-300 glow-effect"
                     >
                       <ExternalLink size={18} />
                       <span>View on Behance</span>
@@ -165,7 +165,7 @@ export default function Projects() {
                       href={project.behanceUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-12 h-12 rounded-lg border-2 border-border flex items-center justify-center hover:border-primary hover:text-primary transition duration-300 group/link"
+                      className="w-12 h-12 rounded-lg border-2 border-border flex items-center justify-center hover:border-primary hover:text-primary transition duration-300 group/link glow-border"
                     >
                       <ExternalLink
                         size={20}

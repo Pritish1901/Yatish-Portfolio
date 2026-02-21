@@ -109,7 +109,7 @@ User Experience, Digital Innovation, Interaction Design
               element.click()
               document.body.removeChild(element)
             }}
-            className="flex items-center gap-2 bg-primary text-primary-foreground px-4 py-2 rounded-lg hover:opacity-90 transition"
+            className="flex items-center gap-2 bg-primary text-primary-foreground px-4 py-2 rounded-lg hover:opacity-90 transition glow-effect"
           >
             <Download size={18} />
             <span className="text-sm font-medium">Resume</span>
@@ -151,7 +151,7 @@ User Experience, Digital Innovation, Interaction Design
                 document.body.removeChild(element)
                 setIsMenuOpen(false)
               }}
-              className="flex items-center gap-2 bg-primary text-primary-foreground px-4 py-2 rounded-lg hover:opacity-90 transition w-fit"
+              className="flex items-center gap-2 bg-primary text-primary-foreground px-4 py-2 rounded-lg hover:opacity-90 transition w-fit glow-effect"
             >
               <Download size={18} />
               <span className="text-sm font-medium">Resume</span>
