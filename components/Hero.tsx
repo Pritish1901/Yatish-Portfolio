@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 import { useEffect, useRef, useState } from 'react'
+import { GlowingEffect } from '@/components/ui/glowing-effect'
 
 export default function Hero() {
   const heroRef = useRef<HTMLDivElement>(null)
@@ -42,18 +43,38 @@ export default function Hero() {
 
               {/* CTA Buttons */}
               <div className="flex flex-wrap gap-4 pt-4">
-                <a
-                  href="#contact"
-                  className="inline-flex items-center justify-center px-8 py-3 bg-primary text-primary-foreground font-semibold rounded-full hover:opacity-90 transition duration-300 cursor-pointer"
-                >
-                  Get in Touch
-                </a>
-                <a
-                  href="#projects"
-                  className="inline-flex items-center justify-center px-8 py-3 border-2 border-foreground text-foreground font-semibold rounded-full hover:bg-foreground/5 transition duration-300 cursor-pointer"
-                >
-                  View All Works
-                </a>
+                <div className="relative rounded-full">
+                  <GlowingEffect
+                    spread={40}
+                    glow={true}
+                    disabled={false}
+                    proximity={64}
+                    inactiveZone={0.01}
+                    borderWidth={2}
+                  />
+                  <a
+                    href="#contact"
+                    className="inline-flex items-center justify-center px-8 py-3 bg-primary text-primary-foreground font-semibold rounded-full hover:opacity-90 transition duration-300 cursor-pointer relative z-10"
+                  >
+                    Get in Touch
+                  </a>
+                </div>
+                <div className="relative rounded-full">
+                  <GlowingEffect
+                    spread={40}
+                    glow={true}
+                    disabled={false}
+                    proximity={64}
+                    inactiveZone={0.01}
+                    borderWidth={2}
+                  />
+                  <a
+                    href="#projects"
+                    className="inline-flex items-center justify-center px-8 py-3 border-2 border-foreground text-foreground font-semibold rounded-full hover:bg-foreground/5 transition duration-300 cursor-pointer relative z-10"
+                  >
+                    View All Works
+                  </a>
+                </div>
               </div>
             </div>
 
