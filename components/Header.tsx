@@ -47,73 +47,14 @@ export default function Header({ isScrolled }: HeaderProps) {
 
         {/* Desktop Resume Button */}
         <div className="hidden md:flex">
-          <button
-            onClick={() => {
-              // Create a simple resume download
-              const resumeContent = `
-Yatish Kapila
-Product & UIUX Designer
-
-SUMMARY
-Passionate Product and UIUX Designer with expertise in creating intuitive digital experiences.
-Specialized in user-centered design, prototyping, and interaction design.
-
-EXPERIENCE
-Product & UIUX Designer
-• Designed and delivered comprehensive design solutions for web and mobile applications
-• Created interactive prototypes and design systems
-• Collaborated with cross-functional teams to enhance user experiences
-• Focus on accessibility, usability, and visual excellence
-
-SKILLS & TOOLS
-Design & Prototyping:
-• Figma, Sketch, Adobe XD
-• Prototyping, Wireframing, User Testing
-• Design Systems & Component Libraries
-
-Interaction Design:
-• Mobile App Design
-• Web Interface Design
-• Micro-interactions & Animations
-• User Research & Testing
-
-Technical:
-• HTML/CSS, Basic React
-• Design Thinking & User-Centered Design
-• Information Architecture
-
-PROJECTS
-Investment App Redesign (iVector)
-• Complete UI/UX overhaul for investment application
-• Enhanced user onboarding and dashboard interactions
-
-Men's App
-• Designed comprehensive mobile application
-• Focus on intuitive navigation and modern aesthetics
-
-Formula 1 by RedBull
-• Created engaging sports content interface
-• Dynamic animations and real-time data visualization
-
-EDUCATION
-UX Design & Digital Product Design
-
-INTERESTS
-User Experience, Digital Innovation, Interaction Design
-              `
-              const element = document.createElement('a')
-              element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(resumeContent))
-              element.setAttribute('download', 'Yatish_Kapila_Resume.txt')
-              element.style.display = 'none'
-              document.body.appendChild(element)
-              element.click()
-              document.body.removeChild(element)
-            }}
+          <a
+            href="/Yatish_Kapila_Resume.pdf"
+            download="Yatish_Kapila_Resume.pdf"
             className="flex items-center gap-2 bg-primary text-primary-foreground px-4 py-2 rounded-lg hover:opacity-90 transition glow-effect"
           >
             <Download size={18} />
             <span className="text-sm font-medium">Resume</span>
-          </button>
+          </a>
         </div>
 
         {/* Mobile Menu Button */}
@@ -139,23 +80,14 @@ User Experience, Digital Innovation, Interaction Design
                 {link.label}
               </a>
             ))}
-            <button
-              onClick={() => {
-                const resumeContent = `Yatish Kapila - Product & UIUX Designer Resume`
-                const element = document.createElement('a')
-                element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(resumeContent))
-                element.setAttribute('download', 'Yatish_Kapila_Resume.txt')
-                element.style.display = 'none'
-                document.body.appendChild(element)
-                element.click()
-                document.body.removeChild(element)
-                setIsMenuOpen(false)
-              }}
+            <a
+              href="/Yatish_Kapila_Resume.pdf"
+              download="Yatish_Kapila_Resume.pdf"
               className="flex items-center gap-2 bg-primary text-primary-foreground px-4 py-2 rounded-lg hover:opacity-90 transition w-fit glow-effect"
             >
               <Download size={18} />
               <span className="text-sm font-medium">Resume</span>
-            </button>
+            </a>
           </div>
         </div>
       )}
