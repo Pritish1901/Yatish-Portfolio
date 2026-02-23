@@ -132,7 +132,6 @@ export default function Skills() {
 
         {/* Tools Section */}
         <div className="mt-20">
-          <h3 className="text-2xl font-bold text-foreground mb-8">Primary Tools & Software</h3>
           <div ref={toolsRef} className="flex flex-wrap gap-4 justify-start">
             {tools.map((tool, idx) => (
               <LiquidButton
