@@ -37,7 +37,7 @@ export default function Hero() {
 
               {/* Description */}
               <p className="text-base md:text-lg text-muted-foreground max-w-lg leading-relaxed">
-                Lorem ipsum dolor sit amet consectetur. At libero sit ric dislauditt eu ut sampler. Phoeisus olus laoreet sem imperdiet cros laoreet. Lacinta fringilla pellentesque et neo imperfeit.
+                Creative and detail-oriented UI/UX Designer with a background in product design and front-end development. Experienced in crafting intuitive digital experiences for web and mobile platforms. Skilled in design systems, prototyping, and integrating AI tools to enhance user journeys and design workflows.
               </p>
 
               {/* CTA Buttons */}
