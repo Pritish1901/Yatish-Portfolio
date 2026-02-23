@@ -79,7 +79,9 @@ export default function Contact() {
               </div>
 
               <a
-                href="mailto:kapilayatish@gmail.com"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=kapilayatish@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group inline-flex items-center gap-3 bg-primary text-primary-foreground px-8 py-4 rounded-lg font-medium hover:opacity-90 transition-all duration-300 shadow-lg hover:shadow-xl glow-effect"
               >
                 <Mail size={20} />

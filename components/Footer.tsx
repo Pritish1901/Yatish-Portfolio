@@ -46,7 +46,9 @@ export default function Footer() {
           </p>
 
           <a
-            href="mailto:kapilayatish@gmail.com"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=kapilayatish@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-primary-foreground text-primary px-8 py-4 rounded-lg font-bold hover:opacity-90 transition duration-300 glow-effect"
           >
             <Mail size={20} />
