@@ -78,8 +78,8 @@ export default function About() {
 
               <p className="text-lg text-muted-foreground leading-relaxed">
                 Beyond pixels and prototypes, I'm driven by continuous learning and pushing creative 
-                boundaries. I actively contribute to the design community and mentorI believe the best 
-                design solutions come from deep user empathy and iterative refinement.
+                boundaries. I actively contribute to the design community and mentor aspiring designers. 
+                I believe the best design solutions come from deep user empathy and iterative refinement.
               </p>
             </div>
 

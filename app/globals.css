@@ -26,6 +26,7 @@ body {
     --primary-foreground: 0 0% 100%;
     --secondary: 35 100% 60%;
     --secondary-foreground: 0 0% 13%;
+    --tertiary: 170 100% 41%;
     --muted: 0 0% 40%;
     --muted-foreground: 0 0% 75%;
     --accent: 327 100% 50%;
@@ -61,6 +62,7 @@ body {
     --primary-foreground: 0 0% 100%;
     --secondary: 35 100% 60%;
     --secondary-foreground: 0 0% 13%;
+    --tertiary: 170 100% 41%;
     --muted: 0 0% 35%;
     --muted-foreground: 0 0% 70%;
     --accent: 327 100% 50%;

@@ -1,5 +1,5 @@
 import React from "react"
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 
 import './globals.css'
@@ -11,6 +11,14 @@ export const metadata: Metadata = {
   title: 'Yatish Kapila - Product & UIUX Design',
   description: 'Product and UIUX Designer. Crafting beautiful and intuitive digital experiences. View my work in interaction design, mobile apps, and web platforms.',
   generator: 'v0.app',
+}
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+  themeColor: '#ff006e',
 }
 
 export default function RootLayout({
