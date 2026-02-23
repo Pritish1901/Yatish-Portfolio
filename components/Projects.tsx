@@ -20,7 +20,7 @@ const projects: Project[] = [
     category: "Mobile App Design",
     description:
       "Complete UI/UX overhaul for an investment application by iVector. Enhanced user onboarding, improved dashboard interactions, and created a comprehensive design system.",
-    image: "investment app redesign.png",
+    image: "/investment-app-redesign.jpg",
     behanceUrl:
       "https://www.behance.net/gallery/239691179/Investment-app-redesign-(iVector)",
     tools: ["Figma", "Prototyping", "User Research", "Design System"],
@@ -31,7 +31,7 @@ const projects: Project[] = [
     category: "Mobile App Design",
     description:
       "Designed a comprehensive mobile application with focus on intuitive navigation and modern aesthetics. Created detailed user flows and micro-interactions for enhanced engagement.",
-    image: "men's app.png",
+    image: "/mens-app-mobile.jpg",
     behanceUrl: "https://www.behance.net/gallery/234626967/Mens-App",
     tools: ["Figma", "Mobile Design", "Interaction Design", "Prototyping"],
   },
@@ -41,7 +41,7 @@ const projects: Project[] = [
     category: "Web Design",
     description:
       "Created an engaging sports content interface with dynamic animations and real-time data visualization. Focused on user engagement and visual storytelling for F1 enthusiasts.",
-    image: "formula 1.png",
+    image: "/formula1-redbull.jpg",
     behanceUrl:
       "https://www.behance.net/gallery/236550631/Formula-1-by-Redbull",
     tools: ["Figma", "Web Design", "Animation", "Data Visualization"],
@@ -77,7 +77,7 @@ export default function Projects() {
     <section
       id="projects"
       ref={sectionRef}
-      className="w-full py-24 px-6 bg-secondary/30"
+      className="w-full py-24 px-6 bg-white/5"
     >
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
@@ -100,7 +100,7 @@ export default function Projects() {
             <div
               key={project.id}
               data-animate
-              className="group bg-background rounded-2xl overflow-hidden border border-tertiary/30 hover:border-tertiary/60 hover:shadow-lg hover:shadow-tertiary/20 transition duration-500 animate-fadeIn relative"
+              className="group bg-background rounded-2xl overflow-hidden border border-white/20 hover:border-white/40 hover:shadow-lg hover:shadow-white/10 transition duration-500 animate-fadeIn relative"
             >
               <div 
                 className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 pointer-events-none rounded-2xl"
@@ -108,7 +108,7 @@ export default function Projects() {
               />
               <div className="grid grid-cols-1 md:grid-cols-2 h-full relative z-10">
                 {/* Image */}
-                <div className="relative h-80 md:h-full overflow-hidden bg-secondary">
+                <div className="relative h-80 md:h-full overflow-hidden bg-white/10">
                   <img
                     src={project.image || "/placeholder.svg"}
                     alt={project.title}
@@ -121,7 +121,7 @@ export default function Projects() {
                 <div className="p-8 md:p-12 flex flex-col justify-between">
                   <div className="space-y-6">
                     <div>
-                      <p className="text-sm font-medium text-tertiary tracking-wide mb-2">
+                      <p className="text-sm font-medium text-primary tracking-wide mb-2">
                         {project.category}
                       </p>
                       <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -141,7 +141,7 @@ export default function Projects() {
                         {project.tools.map((tool, idx) => (
                           <span
                             key={idx}
-                            className="px-3 py-1 bg-secondary text-foreground text-sm rounded-full border border-border"
+                            className="px-3 py-1 bg-white/10 text-foreground text-sm rounded-full border border-white/20"
                           >
                             {tool}
                           </span>

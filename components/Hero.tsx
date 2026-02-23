@@ -60,8 +60,8 @@ export default function Hero() {
             {/* Right Column - Profile Image */}
             <div className="animate-slideInRight hidden md:flex justify-end">
               <div className="relative w-full max-w-sm">
-                {/* Beige background card */}
-                <div className="relative bg-secondary rounded-3xl overflow-hidden aspect-square shadow-2xl">
+                {/* Translucent white background card */}
+                <div className="relative bg-white/15 backdrop-blur-md rounded-3xl overflow-hidden aspect-square shadow-2xl border border-white/30">
                   <img
                     src="/profile-photo.jpg"
                     alt="Yatish Kapila - Creative Designer"
