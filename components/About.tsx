@@ -103,20 +103,20 @@ export default function About() {
           {/* Right - Stats & Highlights */}
           <div ref={statsRef} className="space-y-12">
             <div className="grid grid-cols-2 gap-6">
-              <div data-stat className="p-8 bg-white/10 rounded-xl border border-tertiary/30 hover:border-tertiary/60 hover:shadow-lg hover:shadow-tertiary/20 transition-all duration-300 animate-scaleIn">
-                <p className="text-4xl md:text-5xl font-bold text-tertiary mb-2">50+</p>
+              <div data-stat className="p-8 bg-white/10 rounded-xl border border-white/20 hover:border-white/40 hover:shadow-lg hover:shadow-white/10 transition-all duration-300 animate-scaleIn">
+                <p className="text-4xl md:text-5xl font-bold text-white mb-2">50+</p>
                 <p className="text-sm text-muted-foreground">Projects Delivered</p>
               </div>
-              <div data-stat className="p-8 bg-white/10 rounded-xl border border-tertiary/30 hover:border-tertiary/60 hover:shadow-lg hover:shadow-tertiary/20 transition-all duration-300 animate-scaleIn">
-                <p className="text-4xl md:text-5xl font-bold text-tertiary mb-2">5+</p>
+              <div data-stat className="p-8 bg-white/10 rounded-xl border border-white/20 hover:border-white/40 hover:shadow-lg hover:shadow-white/10 transition-all duration-300 animate-scaleIn">
+                <p className="text-4xl md:text-5xl font-bold text-white mb-2">5+</p>
                 <p className="text-sm text-muted-foreground">Years in Design</p>
               </div>
-              <div data-stat className="p-8 bg-white/10 rounded-xl border border-tertiary/30 hover:border-tertiary/60 hover:shadow-lg hover:shadow-tertiary/20 transition-all duration-300 animate-scaleIn">
-                <p className="text-4xl md:text-5xl font-bold text-tertiary mb-2">20+</p>
+              <div data-stat className="p-8 bg-white/10 rounded-xl border border-white/20 hover:border-white/40 hover:shadow-lg hover:shadow-white/10 transition-all duration-300 animate-scaleIn">
+                <p className="text-4xl md:text-5xl font-bold text-white mb-2">20+</p>
                 <p className="text-sm text-muted-foreground">Satisfied Clients</p>
               </div>
-              <div data-stat className="p-8 bg-white/10 rounded-xl border border-tertiary/30 hover:border-tertiary/60 hover:shadow-lg hover:shadow-tertiary/20 transition-all duration-300 animate-scaleIn">
-                <p className="text-4xl md:text-5xl font-bold text-tertiary mb-2">100%</p>
+              <div data-stat className="p-8 bg-white/10 rounded-xl border border-white/20 hover:border-white/40 hover:shadow-lg hover:shadow-white/10 transition-all duration-300 animate-scaleIn">
+                <p className="text-4xl md:text-5xl font-bold text-white mb-2">100%</p>
                 <p className="text-sm text-muted-foreground">Client Retention</p>
               </div>
               <div data-stat className="p-8 bg-secondary/40 rounded-xl border border-tertiary/30 hover:border-tertiary/60 hover:shadow-lg hover:shadow-tertiary/20 transition-all duration-300 animate-scaleIn">
@@ -139,7 +139,7 @@ export default function About() {
               <div className="space-y-3">
                 {['User-centered approach', 'Attention to detail', 'Collaborative teamwork', 'Continuous improvement'].map((value, idx) => (
                   <div key={idx} className="flex items-center gap-3">
-                    <div className="w-1.5 h-1.5 rounded-full bg-tertiary" />
+                    <div className="w-1.5 h-1.5 rounded-full bg-white" />
                     <span className="text-muted-foreground">{value}</span>
                   </div>
                 ))}

@@ -100,7 +100,7 @@ export default function Projects() {
             <div
               key={project.id}
               data-animate
-              className="group bg-background rounded-2xl overflow-hidden border border-tertiary/30 hover:border-tertiary/60 hover:shadow-lg hover:shadow-tertiary/20 transition duration-500 animate-fadeIn relative"
+              className="group bg-background rounded-2xl overflow-hidden border border-white/20 hover:border-white/40 hover:shadow-lg hover:shadow-white/10 transition duration-500 animate-fadeIn relative"
             >
               <div 
                 className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 pointer-events-none rounded-2xl"
@@ -121,7 +121,7 @@ export default function Projects() {
                 <div className="p-8 md:p-12 flex flex-col justify-between">
                   <div className="space-y-6">
                     <div>
-                      <p className="text-sm font-medium text-tertiary tracking-wide mb-2">
+                      <p className="text-sm font-medium text-primary tracking-wide mb-2">
                         {project.category}
                       </p>
                       <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
