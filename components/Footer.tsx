@@ -8,7 +8,7 @@ export default function Footer() {
   const socialLinks = [
     {
       name: 'Email',
-      href: 'mailto:pritish@example.com',
+      href: 'mailto:kapilayatish@gmail.com',
       icon: Mail,
     },
     {
@@ -46,8 +46,10 @@ export default function Footer() {
           </p>
 
           <a
-            href="mailto:pritish@example.com"
-            className="inline-flex items-center gap-2 bg-primary-foreground text-primary px-8 py-4 rounded-lg font-bold hover:opacity-90 transition duration-300"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=kapilayatish@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-primary-foreground text-primary px-8 py-4 rounded-lg font-bold hover:opacity-90 transition duration-300 glow-effect"
           >
             <Mail size={20} />
             <span>Send Me an Email</span>
@@ -148,7 +150,7 @@ export default function Footer() {
                       href={link.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-10 h-10 rounded-lg border border-border hover:border-primary hover:bg-primary/10 transition duration-300 flex items-center justify-center text-foreground hover:text-primary group"
+                      className="w-10 h-10 rounded-lg border border-border hover:border-primary hover:bg-primary/10 transition duration-300 flex items-center justify-center text-foreground hover:text-primary group glow-border"
                       title={link.name}
                     >
                       <Icon size={18} />

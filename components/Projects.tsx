@@ -100,9 +100,13 @@ export default function Projects() {
             <div
               key={project.id}
               data-animate
-              className="group bg-background rounded-2xl overflow-hidden border border-border hover:border-primary/50 transition duration-500 hover:shadow-lg animate-fadeIn"
+              className="group bg-background rounded-2xl overflow-hidden border border-tertiary/30 hover:border-tertiary/60 hover:shadow-lg hover:shadow-tertiary/20 transition duration-500 animate-fadeIn relative"
             >
-              <div className="grid grid-cols-1 md:grid-cols-2 h-full">
+              <div 
+                className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 pointer-events-none rounded-2xl"
+                style={{ background: 'linear-gradient(to bottom right, rgba(52, 211, 153, 0.25), rgba(52, 211, 153, 0.12))' }}
+              />
+              <div className="grid grid-cols-1 md:grid-cols-2 h-full relative z-10">
                 {/* Image */}
                 <div className="relative h-80 md:h-full overflow-hidden bg-secondary">
                   <img
@@ -117,7 +121,7 @@ export default function Projects() {
                 <div className="p-8 md:p-12 flex flex-col justify-between">
                   <div className="space-y-6">
                     <div>
-                      <p className="text-sm font-medium text-primary tracking-wide mb-2">
+                      <p className="text-sm font-medium text-tertiary tracking-wide mb-2">
                         {project.category}
                       </p>
                       <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -152,7 +156,7 @@ export default function Projects() {
                       href={project.behanceUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:opacity-90 transition duration-300"
+                      className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:opacity-90 transition duration-300 glow-effect"
                     >
                       <ExternalLink size={18} />
                       <span>View on Behance</span>
@@ -161,7 +165,7 @@ export default function Projects() {
                       href={project.behanceUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-12 h-12 rounded-lg border-2 border-border flex items-center justify-center hover:border-primary hover:text-primary transition duration-300 group/link"
+                      className="w-12 h-12 rounded-lg border-2 border-border flex items-center justify-center hover:border-primary hover:text-primary transition duration-300 group/link glow-border"
                     >
                       <ExternalLink
                         size={20}
