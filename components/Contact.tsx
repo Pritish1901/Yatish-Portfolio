@@ -57,7 +57,7 @@ export default function Contact() {
           {/* Left Column - Email CTA */}
           <div data-animate className="animate-fadeIn space-y-12">
             {/* Availability Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-secondary/50 rounded-full border border-border/50">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 rounded-full border border-white/20">
               <div className="w-2 h-2 rounded-full bg-primary animate-pulse" />
               <span className="text-sm font-medium text-foreground">Available for Projects</span>
             </div>
@@ -137,7 +137,7 @@ export default function Contact() {
             {/* Info Cards */}
             <div className="grid gap-6">
               {/* Response Time */}
-              <div className="p-8 bg-secondary/40 rounded-xl border border-border/50 hover:border-primary/30 transition-all duration-300 group cursor-pointer">
+              <div className="p-8 bg-white/10 rounded-xl border border-white/20 hover:border-primary/30 transition-all duration-300 group cursor-pointer">
                 <p className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-3">
                   Response Time
                 </p>
@@ -150,7 +150,7 @@ export default function Contact() {
               </div>
 
               {/* Availability */}
-              <div className="p-8 bg-secondary/40 rounded-xl border border-border/50 hover:border-primary/30 transition-all duration-300 group cursor-pointer">
+              <div className="p-8 bg-white/10 rounded-xl border border-white/20 hover:border-primary/30 transition-all duration-300 group cursor-pointer">
                 <p className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-3">
                   Timezone
                 </p>
@@ -163,7 +163,7 @@ export default function Contact() {
               </div>
 
               {/* Project Types */}
-              <div className="p-8 bg-secondary/40 rounded-xl border border-border/50 hover:border-primary/30 transition-all duration-300">
+              <div className="p-8 bg-white/10 rounded-xl border border-white/20 hover:border-primary/30 transition-all duration-300">
                 <p className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-4">
                   Open To
                 </p>

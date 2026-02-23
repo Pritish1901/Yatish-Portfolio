@@ -77,7 +77,7 @@ export default function Projects() {
     <section
       id="projects"
       ref={sectionRef}
-      className="w-full py-24 px-6 bg-secondary/30"
+      className="w-full py-24 px-6 bg-white/5"
     >
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
@@ -108,7 +108,7 @@ export default function Projects() {
               />
               <div className="grid grid-cols-1 md:grid-cols-2 h-full relative z-10">
                 {/* Image */}
-                <div className="relative h-80 md:h-full overflow-hidden bg-secondary">
+                <div className="relative h-80 md:h-full overflow-hidden bg-white/10">
                   <img
                     src={project.image || "/placeholder.svg"}
                     alt={project.title}
@@ -141,7 +141,7 @@ export default function Projects() {
                         {project.tools.map((tool, idx) => (
                           <span
                             key={idx}
-                            className="px-3 py-1 bg-secondary text-foreground text-sm rounded-full border border-border"
+                            className="px-3 py-1 bg-white/10 text-foreground text-sm rounded-full border border-white/20"
                           >
                             {tool}
                           </span>
