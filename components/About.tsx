@@ -119,18 +119,6 @@ export default function About() {
                 <p className="text-4xl md:text-5xl font-bold text-white mb-2">100%</p>
                 <p className="text-sm text-muted-foreground">Client Retention</p>
               </div>
-              <div data-stat className="p-8 bg-secondary/40 rounded-xl border border-tertiary/30 hover:border-tertiary/60 hover:shadow-lg hover:shadow-tertiary/20 transition-all duration-300 animate-scaleIn">
-                <p className="text-4xl md:text-5xl font-bold text-tertiary mb-2">5+</p>
-                <p className="text-sm text-muted-foreground">Years in Design</p>
-              </div>
-              <div data-stat className="p-8 bg-secondary/40 rounded-xl border border-tertiary/30 hover:border-tertiary/60 hover:shadow-lg hover:shadow-tertiary/20 transition-all duration-300 animate-scaleIn">
-                <p className="text-4xl md:text-5xl font-bold text-tertiary mb-2">20+</p>
-                <p className="text-sm text-muted-foreground">Satisfied Clients</p>
-              </div>
-              <div data-stat className="p-8 bg-secondary/40 rounded-xl border border-tertiary/30 hover:border-tertiary/60 hover:shadow-lg hover:shadow-tertiary/20 transition-all duration-300 animate-scaleIn">
-                <p className="text-4xl md:text-5xl font-bold text-tertiary mb-2">100%</p>
-                <p className="text-sm text-muted-foreground">Client Retention</p>
-              </div>
             </div>
 
             {/* Key Values */}
