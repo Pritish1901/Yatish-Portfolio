@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useRef } from 'react'
+import { LiquidButton } from '@/components/ui/liquid-glass-button'
 
 interface Skill {
   category: string
@@ -103,12 +104,12 @@ export default function Skills() {
         </div>
 
         {/* Skills Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-24">
           {skills.map((skillGroup, idx) => (
             <div
               key={idx}
               data-animate
-              className="p-8 bg-secondary/50 rounded-lg border border-border/40 animate-fadeIn"
+              className="p-8 bg-white/10 rounded-lg border border-white/20 animate-fadeIn"
             >
               <h3 className="text-base font-semibold text-foreground mb-6">
                 {skillGroup.category}
@@ -127,6 +128,23 @@ export default function Skills() {
               </ul>
             </div>
           ))}
+        </div>
+
+        {/* Tools Section */}
+        <div className="mt-20">
+          <h3 className="text-2xl font-bold text-foreground mb-8">Primary Tools & Software</h3>
+          <div ref={toolsRef} className="flex flex-wrap gap-4 justify-start">
+            {tools.map((tool, idx) => (
+              <LiquidButton
+                key={idx}
+                data-tool
+                size="lg"
+                className="opacity-0 animate-scaleIn"
+              >
+                {tool.name}
+              </LiquidButton>
+            ))}
+          </div>
         </div>
       </div>
     </section>
